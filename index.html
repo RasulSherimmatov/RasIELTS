@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/index.css">
+    <title>RasIELTS-best source!</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">RasIELTS</div>
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="links">
+            <ul>
+                <li><a href="#photo">Home</a></li>
+                <li><a href="#ielts">IELTS</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!--Home part-->
+    <!--Photo part-->
+    <div id="photo">
+        <button id="go" type="submit">Free platform for preparation!</button><br>
+        <a href="#ielts"> <button id="explore">Explore --></button></a>
+    </div>
+
+    <!--IELTS section-->
+    <div id="ielts">
+        <h1 id="i">IELTS</h1>
+        <div class="sections">
+            <div class="categs">
+                <img src="img/listen.png">
+                <h2>Listening</h2>
+                <p id="info">Listening tests to assess</p>
+                <a href="img/engexam.info-IELTS Listening Practice Test 12 Printable.pdf" download> <button id="free">See an example</button></a>
+            </div>
+            <div class="categs">
+                <img src="img/read.png">
+                <h2>Reading</h2>
+                <p id="info">Reading academic articles</p>
+                <a href="img/Makkar1.pdf" download><button id="free">See an example</button></a>
+            </div>
+            <div class="categs">
+                <img src="img/write.png">
+                <h2>Writing</h2>
+                <p id="info">Writing academic essays</p>
+                <a href="img/IELTS Writing Task 1-converted.pdf" download><button id="free">See an example</button></a>
+            </div>
+            <div class="categs">
+                <img src="img/speak.png">
+                <h2>Speaking</h2>
+                <p id="info">1 on 1 face-to-face test</p>
+                <a href="img/Speaking 24.12.2021.docx" download><button id="free">See an example</button></a>
+            </div>
+        </div>
+    </div>
+
+    <!--About Section-->
+    <div id="about">
+        <h1 id="ab">About Us</h1>
+        <div class="description">
+            <div class="pic"></div>
+            <div class="information">
+                <p id="myinfo">Hi,everyone! I'm Rasul, an experienced English tutor. I've been learning and practicing the English language fluently over 5 years and teaching some students. How is your preparation process going? I hope you are doing great to achieve
+                    your desired band score! Well, there is good news that we also established our platform so as to share our valuable and reliable test materials for you ). We are well aware that there are other great websites which you can use free.
+                    Actually, we also provide free materials and would love to help you achieve success! Good luck and enjoy and improve your English skills with our recources! </p>
+            </div>
+        </div>
+    </div>
+
+    <!--Contact Section-->
+    <div id="contact">
+        <h1 id="cont">Contact</h1>
+        <form>
+            <input type="text" id="ism" placeholder="Your name..." required><br>
+            <input type="text" id="ism" placeholder="Your e-mail..." required><br>
+            <input type="text" id="xabar" placeholder="Your message..." required><br>
+            <button type="submit" id="yubor">Send</button>
+        </form>
+    </div>
+    <!--Footer part-->
+
+    <footer>
+        <div id="past">
+            <label id="huquq">All Rights Reserved, 2022. Find us on </label>
+            <img id="net" src="img/telegram.png">
+            <img id="net" src="img/youtube.png">
+            <img id="net" src="img/facebook.png">
+        </div>
+    </footer>
+    <!--JS-->
+    <script>
+        const toggleButton = document.getElementsByClassName('toggle-button')[0];
+        const navbarLinks = document.getElementsByClassName('links')[0];
+
+        toggleButton.addEventListener('click', () => {
+            navbarLinks.classList.toggle('active')
+        })
+    </script>
+
+</body>
+
+</html>

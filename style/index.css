@@ -1,0 +1,449 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.navbar {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    position: static;
+}
+
+.logo {
+    font-size: xx-large;
+    margin: .5rem;
+    font-family: cursive;
+}
+
+.links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.links ul li {
+    list-style: none;
+}
+
+.links ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    display: block;
+    font-size: large;
+    font-family: cursive;
+}
+
+.links li:hover {
+    background-color: cornflowerblue;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+
+/*Photo*/
+
+#photo {
+    width: 100%;
+    height: 600px;
+    background-image: url("../img/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#go {
+    margin-left: 100px;
+    margin-top: 200px;
+    font-family: cursive;
+    font-size: xx-large;
+    border: none;
+    color: red;
+}
+
+#explore {
+    background-color: red;
+    font-size: x-large;
+    font-family: cursive;
+    color: white;
+    border: none;
+    margin-top: 10px;
+    margin-left: 110px;
+    border-radius: 10px;
+}
+
+
+/*Ielts section*/
+
+#ielts {
+    width: 100%;
+    height: 500px;
+    background-color: red;
+    text-align: center;
+}
+
+#i {
+    color: white;
+    font-family: cursive;
+}
+
+#ab {
+    color: red;
+    font-family: cursive;
+}
+
+#cont {
+    color: white;
+    font-family: cursive;
+}
+
+.sections {
+    width: 100%;
+    height: 400px;
+    display: flex;
+}
+
+.categs {
+    width: 20%;
+    height: 300px;
+    margin-left: 4%;
+    margin-top: 50px;
+    background-color: white;
+    overflow-wrap: break-word;
+    border-radius: 10px;
+}
+
+img {
+    width: 30%;
+    height: 80px;
+    margin-top: 10px;
+}
+
+#info {
+    font-family: cursive;
+}
+
+#free {
+    height: 30px;
+    background-color: red;
+    color: white;
+    font-family: cursive;
+    border: none;
+    border-radius: 5px;
+}
+
+h2 {
+    color: red;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+#about {
+    width: 100%;
+    height: 440px;
+    text-align: center;
+}
+
+.description {
+    width: 100%;
+    height: 400px;
+    display: flex;
+}
+
+.pic {
+    width: 20%;
+    height: 300px;
+    background-color: white;
+    margin-left: 4%;
+    border-radius: 10px;
+    background-image: url("../img/me.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: solid red 2px;
+}
+
+.information {
+    width: 68%;
+    height: 300px;
+    margin-left: 4%;
+    border-radius: 10px;
+    overflow-wrap: break-word;
+    border: solid red 2px;
+}
+
+#myinfo {
+    font-size: larger;
+    font-family: cursive;
+    color: black;
+}
+
+
+/*Contact Section*/
+
+#contact {
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    background-color: rgb(54, 53, 53);
+}
+
+#ism {
+    width: 80%;
+    height: 50px;
+    margin-top: 5px;
+}
+
+#xabar {
+    width: 80%;
+    height: 250px;
+    margin-top: 5px;
+}
+
+#yubor {
+    width: 10%;
+    height: 50px;
+    margin-top: 5px;
+}
+
+
+/*Footer Part*/
+
+#past {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(37, 36, 36);
+    color: white;
+    display: flex;
+}
+
+#huquq {
+    margin-top: 40px;
+    margin-left: 450px;
+}
+
+#net {
+    width: 30px;
+    height: 30px;
+    margin-top: 35px;
+    margin-left: 10px;
+}
+
+#net:hover {
+    width: 50px;
+    height: 45px;
+}
+
+@media (max-width: 425px) {
+    .toggle-button {
+        display: flex;
+        margin-top: 7px;
+    }
+    .links {
+        display: none;
+        width: 100%;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+    .links li:hover {
+        background-color: cornflowerblue;
+    }
+    .links li {
+        text-align: center;
+    }
+    .links li a {
+        padding: .5rem 1rem;
+    }
+    .links.active {
+        display: flex;
+    }
+    #photo {
+        width: 100%;
+        height: 600px;
+        background-image: url("../img/bg.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    #go {
+        margin-left: 0px;
+        margin-top: 200px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: large;
+        border: none;
+        color: red;
+        background-color: whitesmoke;
+    }
+    #explore {
+        background-color: red;
+        font-size: large;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: white;
+        border: none;
+        margin-top: 10px;
+        margin-left: 10px;
+        border-radius: 10px;
+    }
+    #ielts {
+        width: 100%;
+        height: 1200px;
+        background-color: red;
+        text-align: center;
+    }
+    #i {
+        color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    #ab {
+        color: red;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    #cont {
+        color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .sections {
+        width: 100%;
+        height: 1100px;
+        display: flex;
+        flex-direction: column;
+    }
+    .categs {
+        width: 80%;
+        height: 300px;
+        margin-left: 10%;
+        margin-top: 10px;
+        background-color: white;
+        overflow-wrap: break-word;
+        border-radius: 10px;
+    }
+    img {
+        width: 30%;
+        height: 80px;
+        margin-top: 10px;
+    }
+    #info {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    #free {
+        height: 30px;
+        background-color: red;
+        color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        border: none;
+        border-radius: 5px;
+    }
+    h2 {
+        color: red;
+        font-weight: bold;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    #about {
+        width: 100%;
+        height: 850px;
+        text-align: center;
+    }
+    .description {
+        width: 100%;
+        height: 750px;
+        display: flex;
+        flex-direction: column;
+    }
+    .pic {
+        width: 90%;
+        height: 300px;
+        margin-left: 4%;
+        border-radius: 10px;
+        margin-left: 5%;
+        background-image: url("../img/me.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .information {
+        width: 90%;
+        height: 500px;
+        margin-left: 5%;
+        border-radius: 10px;
+        margin-top: 15px;
+        overflow-wrap: break-word;
+    }
+    #myinfo {
+        font-size: larger;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: black;
+    }
+    #contact {
+        width: 100%;
+        height: 500px;
+        background-color: rgb(54, 53, 53);
+        text-align: center;
+    }
+    #ism {
+        width: 80%;
+        height: 50px;
+        margin-top: 5px;
+    }
+    #xabar {
+        width: 80%;
+        height: 250px;
+        margin-top: 5px;
+    }
+    #yubor {
+        width: 30%;
+        height: 30px;
+        margin-top: 5px;
+    }
+    footer {
+        overflow-wrap: break-word;
+    }
+    #past {
+        width: 100%;
+        height: 100px;
+        background-color: rgb(37, 36, 36);
+        color: white;
+        display: flex;
+    }
+    #huquq {
+        margin-top: 40px;
+        margin-left: 25px;
+        color: white;
+    }
+    #net {
+        width: 30px;
+        height: 30px;
+        margin-top: 35px;
+    }
+    #net:hover {
+        width: 50px;
+        height: 45px;
+    }
+}
